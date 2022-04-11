@@ -3,6 +3,88 @@
 @import 'reset';
 @import 'global';
 
+.header{
+	padding: 50px 0;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.logo{
+	display: flex;
+	align-items: center;
+	font-size: 36px;
+	line-height: 58px;
+	color: $default;
+	&__img{
+		padding-right: 14px;
+	}
+}
+.menu{
+	&__list{
+		display: flex;
+	}
+	&__list-item + .menu__list-item{
+		padding-left: 35px;
+	}
+	&__list-link{
+		color: $default;
+		line-height: 12px;
+		font-size: 15px;
+	}
+}
+.user-nav{
+	display: flex;
+	align-items: center;
+	&__link{
+	position: relative;
+		&-search{
+		width: 51px;
+		height: 51px;
+		background-color: #edf1f4;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+		&-menu{
+		width: 51px;
+		height: 51px;
+		background-color: $around;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+	}
+	&__num{
+		position: absolute;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background-color: #fff;
+		top: -9px;
+		left: 10px;
+		font-size: 10px;
+		line-height: 27px;
+		@extend %dmsans-400;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #243f4d;
+	}
+	&__unity{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 178px;
+		height: 51px;
+		background-color: $bodily;
+		border-radius: 25px;
+		margin: 0 40px;
 
+	}
+}
 
 @import 'media';
