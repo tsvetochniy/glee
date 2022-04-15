@@ -86,5 +86,88 @@
 
 	}
 }
-
+.footer-top{
+	padding: 80px 0;
+	border-bottom: 1px solid #dae4e9;
+	display: flex;
+	
+	&__contact{
+		width: 200px;
+		margin-right: 100px;
+	}
+	&__nav{
+		width: 170px;
+		margin-right: 130px;
+		margin-top: 25px;
+	}
+	&__item-form{
+		width: 270px;
+		margin-top: 25px;
+	}
+	&__list-link, &__address, &__text {
+		font-size: 14px;
+		line-height: 24px;
+		@extend %rubik-400;
+		color: $link;
+	}
+	&__list-link, &__address{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	&__title{
+		@extend %dmsans-700;
+		font-size: 16px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: $title;
+		margin-bottom: 20px
+	}
+	&__logo{
+		margin-bottom: 20px
+	}
+	&__input{
+		max-width: 170px;
+		width: 100%;
+		background-color: $bg;
+		border: none;
+		padding: 10px 15px;
+		line-height: 12px;
+		@extend %dmsans-400;
+		&::placeholder{
+			color: #234969;
+			font-size: 12px;
+			line-height: 12px;
+		}
+	}
+	&__btn{
+		border: none;
+		background-color: $around;
+		padding: 10px 15px;
+		font-size: 14px;
+		line-height: 21px;
+		@extend %dmsans-400;
+		color: #fff;
+		margin-left: -4px;
+		transform: translateY(-1px);
+		cursor: pointer;
+	}
+}
+.footer-bottom{
+	padding: 35px 0;
+	font-size: 14px;
+	line-height: 24px;
+	@extend %rubik-400;
+	color: $link;
+	display: flex;
+	justify-content: space-between;
+	&__list{
+		display: flex;
+		&-item + .footer-bottom__list-item{
+			margin-left: 15px;
+		}
+		&-link{
+			color: $link;
+		}
+	}
+}
 @import 'media';
